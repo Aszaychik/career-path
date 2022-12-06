@@ -6,6 +6,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    
+    <style> @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap'); </style>
+
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/f79ec98915.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS v5.2.1 -->
@@ -13,6 +18,9 @@
 
     <!-- Custom Style -->
     <style>
+      main{
+        font-family: 'Raleway', sans-serif;
+      }
       .btn-sub {
         background: #a0c9ff;
       }
@@ -20,45 +28,7 @@
   </head>
 
   <body>
-    <main>
-      <header>
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" id="navId" role="tablist">
-          <li class="nav-item">
-            <a href="#tab1Id" class="nav-link active" data-bs-toggle="tab" aria-current="page">Active</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#tab2Id">Action</a>
-              <a class="dropdown-item" href="#tab3Id">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#tab4Id">Action</a>
-            </div>
-          </li>
-          <li class="nav-item" role="presentation">
-            <a href="#tab5Id" class="nav-link" data-bs-toggle="tab">Another link</a>
-          </li>
-          <li class="nav-item" role="presentation">
-            <a href="#" class="nav-link disabled" data-bs-toggle="tab">Disabled</a>
-          </li>
-        </ul>
-
-        <!-- Tab panes -->
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
-          <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
-          <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
-          <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-          <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
-        </div>
-
-        <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
-        <script>
-          var triggerEl = document.querySelector("#navId a");
-          bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
-        </script>
-      </header>
+    <main class="100vh">
 
       <!-- Back -->
       <section class="mt-5 container d-flex align-items-center gap-3">
@@ -69,12 +39,12 @@
       </section>
 
       <!-- Main Content -->
-      <p class="text-center fw-bold">Frontend Developer</p>
+      <p class="text-center fw-bold mt-5">Frontend Developer</p>
       <section class="container mt-5 d-grid gap-5">
         <!-- Topic 1 -->
         <div class="row align-items-center text-center">
           <article class="col-4">
-            <ul class="d-flex flex-column gap-5 list-unstyled">
+            <ul class="d-flex flex-column gap-3 list-unstyled">
               <?php
               for($i = 1; $i <= 3; $i++):
               ?>
@@ -105,7 +75,7 @@
             <button class="btn btn-dark p-3 rounded-1">Topic 1</button>
           </article>
           <article class="col-4">
-            <ul class="d-flex flex-column gap-5 list-unstyled">
+            <ul class="d-flex flex-column gap-3 list-unstyled">
             <?php
               for($i = 4; $i <= 6; $i++):
               ?>
@@ -137,7 +107,7 @@
         <!-- Topic 2 -->
         <div class="row align-items-center text-center">
           <article class="col-4">
-            <ul class="d-flex flex-column gap-5 list-unstyled">
+            <ul class="d-flex flex-column gap-3 list-unstyled">
               <?php
               for($i = 1; $i <= 2; $i++):
               ?>
@@ -168,7 +138,7 @@
             <button class="btn btn-dark p-3 rounded-1">Topic 2</button>
           </article>
           <article class="col-4">
-            <ul class="d-flex flex-column gap-5 list-unstyled">
+            <ul class="d-flex flex-column gap-3 list-unstyled">
             <?php
               for($i = 3; $i <= 3; $i++):
               ?>
@@ -200,7 +170,7 @@
         <!-- Topic 3 -->
         <div class="row align-items-center text-center">
           <article class="col-4">
-            <ul class="d-flex flex-column gap-5 list-unstyled">
+            <ul class="d-flex flex-column gap-3 list-unstyled">
               <?php
               for($i = 1; $i <= 3; $i++):
               ?>
@@ -231,7 +201,7 @@
             <button class="btn btn-dark p-3 rounded-1">Topic 3</button>
           </article>
           <article class="col-4">
-            <ul class="d-flex flex-column gap-5 list-unstyled">
+            <ul class="d-flex flex-column gap-3 list-unstyled">
             <?php
               for($i = 4; $i <= 5; $i++):
               ?>
@@ -261,7 +231,7 @@
         </div>
       </section>
 
-      <p></p>
+      <p class="mt-5 text-center text-muted fst-italic">“Good Luck on Your Journey”</p>
     </main>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
