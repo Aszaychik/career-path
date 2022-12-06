@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Font Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway:wght@700&display=swap" rel="stylesheet">
     
-    <style> @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap'); </style>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway:wght@700&display=swap'); </style>
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/f79ec98915.js" crossorigin="anonymous"></script>
@@ -23,6 +23,12 @@
       }
       .btn-sub {
         background: #a0c9ff;
+      }
+
+      .modal .modal-dialog .modal-content .modal-body{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        text-align: start;
       }
     </style>
   </head>
@@ -44,15 +50,15 @@
         <!-- Topic 1 -->
         <div class="row align-items-center text-center">
           <article class="col-4">
-            <ul class="d-flex flex-column gap-3 list-unstyled">
+            <ul class="d-flex flex-column gap-4 list-unstyled m-auto">
               <?php
               for($i = 1; $i <= 3; $i++):
               ?>
               <div>
-                <li><button class="btn btn-sub p-3 rounded-1 text-black" data-bs-toggle="modal" data-bs-target="<?= "#modal-sub-topic-1-$i" ;?>"><?= "Sub Topic 1.$i";?></button></li>
+                <li><button class="btn btn-sub p-3 px-5 rounded-1 text-black" data-bs-toggle="modal" data-bs-target="<?= "#modal-sub-topic-1-$i" ;?>"><?= "Sub Topic 1.$i";?></button></li>
                 <!-- Modal -->
                 <div class="modal fade" id="<?= "modal-sub-topic-1-$i" ;?>" tabindex="-1" aria-labelledby="<?= "modal-sub-topic-1-$i" ;?>Label" aria-hidden="true">
-                  <div class="modal-dialog">
+                  <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h5 class="modal-title" id="<?= "modal-sub-topic-1-$i" ;?>Label"><?= "Sub Topic 1.$i";?></h5>
@@ -72,18 +78,18 @@
             </ul>
           </article>
           <article class="col-4">
-            <button class="btn btn-dark p-3 rounded-1">Topic 1</button>
+            <button class="btn btn-dark p-3 px-5 rounded-1">Topic 1</button>
           </article>
-          <article class="col-4">
-            <ul class="d-flex flex-column gap-3 list-unstyled">
+          <article class="col-4 ">
+            <ul class="d-flex flex-column gap-4 list-unstyled m-auto">
             <?php
               for($i = 4; $i <= 6; $i++):
               ?>
               <div>
-                <li><button class="btn btn-sub p-3 rounded-1 text-black" data-bs-toggle="modal" data-bs-target="<?= "#modal-sub-topic-1-$i" ;?>"><?= "Sub Topic 1.$i";?></button></li>
+                <li><button class="btn btn-sub p-3 px-5 rounded-1 text-black" data-bs-toggle="modal" data-bs-target="<?= "#modal-sub-topic-1-$i" ;?>"><?= "Sub Topic 1.$i";?></button></li>
                 <!-- Modal -->
                 <div class="modal fade" id="<?= "modal-sub-topic-1-$i" ;?>" tabindex="-1" aria-labelledby="<?= "modal-sub-topic-1-$i" ;?>Label" aria-hidden="true">
-                  <div class="modal-dialog">
+                  <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h5 class="modal-title" id="<?= "modal-sub-topic-1-$i" ;?>Label"><?= "Sub Topic 1.$i";?></h5>
@@ -107,15 +113,15 @@
         <!-- Topic 2 -->
         <div class="row align-items-center text-center">
           <article class="col-4">
-            <ul class="d-flex flex-column gap-3 list-unstyled">
+            <ul class="d-flex flex-column gap-4 list-unstyled m-auto">
               <?php
               for($i = 1; $i <= 2; $i++):
               ?>
               <div>
-                <li><button class="btn btn-sub p-3 rounded-1 text-black" data-bs-toggle="modal" data-bs-target="<?= "#modal-sub-topic-2-$i" ;?>"><?= "Sub Topic 2.$i";?></button></li>
+                <li><button class="btn btn-sub p-3 px-5 rounded-1 text-black" data-bs-toggle="modal" data-bs-target="<?= "#modal-sub-topic-2-$i" ;?>"><?= "Sub Topic 2.$i";?></button></li>
                 <!-- Modal -->
                 <div class="modal fade" id="<?= "modal-sub-topic-2-$i" ;?>" tabindex="-1" aria-labelledby="<?= "modal-sub-topic-2-$i" ;?>Label" aria-hidden="true">
-                  <div class="modal-dialog">
+                  <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h5 class="modal-title" id="<?= "modal-sub-topic-2-$i" ;?>Label"><?= "Sub Topic 2.$i";?></h5>
@@ -135,18 +141,18 @@
             </ul>
           </article>
           <article class="col-4">
-            <button class="btn btn-dark p-3 rounded-1">Topic 2</button>
+            <button class="btn btn-dark p-3 px-5 rounded-1">Topic 2</button>
           </article>
-          <article class="col-4">
-            <ul class="d-flex flex-column gap-3 list-unstyled">
+          <article class="col-4 ">
+            <ul class="d-flex flex-column gap-4 list-unstyled m-auto">
             <?php
               for($i = 3; $i <= 3; $i++):
               ?>
               <div>
-                <li><button class="btn btn-sub p-3 rounded-1 text-black" data-bs-toggle="modal" data-bs-target="<?= "#modal-sub-topic-2-$i" ;?>"><?= "Sub Topic 2.$i";?></button></li>
+                <li><button class="btn btn-sub p-3 px-5 rounded-1 text-black" data-bs-toggle="modal" data-bs-target="<?= "#modal-sub-topic-2-$i" ;?>"><?= "Sub Topic 2.$i";?></button></li>
                 <!-- Modal -->
                 <div class="modal fade" id="<?= "modal-sub-topic-2-$i" ;?>" tabindex="-1" aria-labelledby="<?= "modal-sub-topic-2-$i" ;?>Label" aria-hidden="true">
-                  <div class="modal-dialog">
+                  <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h5 class="modal-title" id="<?= "modal-sub-topic-2-$i" ;?>Label"><?= "Sub Topic 2.$i";?></h5>
@@ -170,15 +176,15 @@
         <!-- Topic 3 -->
         <div class="row align-items-center text-center">
           <article class="col-4">
-            <ul class="d-flex flex-column gap-3 list-unstyled">
+            <ul class="d-flex flex-column gap-4 list-unstyled m-auto">
               <?php
               for($i = 1; $i <= 3; $i++):
               ?>
               <div>
-                <li><button class="btn btn-sub p-3 rounded-1 text-black" data-bs-toggle="modal" data-bs-target="<?= "#modal-sub-topic-3-$i" ;?>"><?= "Sub Topic 3.$i";?></button></li>
+                <li><button class="btn btn-sub p-3 px-5 rounded-1 text-black" data-bs-toggle="modal" data-bs-target="<?= "#modal-sub-topic-3-$i" ;?>"><?= "Sub Topic 3.$i";?></button></li>
                 <!-- Modal -->
                 <div class="modal fade" id="<?= "modal-sub-topic-3-$i" ;?>" tabindex="-1" aria-labelledby="<?= "modal-sub-topic-3-$i" ;?>Label" aria-hidden="true">
-                  <div class="modal-dialog">
+                  <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h5 class="modal-title" id="<?= "modal-sub-topic-3-$i" ;?>Label"><?= "Sub Topic 3.$i";?></h5>
@@ -198,18 +204,18 @@
             </ul>
           </article>
           <article class="col-4">
-            <button class="btn btn-dark p-3 rounded-1">Topic 3</button>
+            <button class="btn btn-dark p-3 px-5 rounded-1">Topic 3</button>
           </article>
           <article class="col-4">
-            <ul class="d-flex flex-column gap-3 list-unstyled">
+            <ul class="d-flex flex-column gap-4 list-unstyled m-auto">
             <?php
               for($i = 4; $i <= 5; $i++):
               ?>
               <div>
-                <li><button class="btn btn-sub p-3 rounded-1 text-black" data-bs-toggle="modal" data-bs-target="<?= "#modal-sub-topic-3-$i" ;?>"><?= "Sub Topic 3.$i";?></button></li>
+                <li><button class="btn btn-sub p-3 px-5 rounded-1 text-black" data-bs-toggle="modal" data-bs-target="<?= "#modal-sub-topic-3-$i" ;?>"><?= "Sub Topic 3.$i";?></button></li>
                 <!-- Modal -->
                 <div class="modal fade" id="<?= "modal-sub-topic-3-$i" ;?>" tabindex="-1" aria-labelledby="<?= "modal-sub-topic-3-$i" ;?>Label" aria-hidden="true">
-                  <div class="modal-dialog">
+                  <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h5 class="modal-title" id="<?= "modal-sub-topic-3-$i" ;?>Label"><?= "Sub Topic 3.$i";?></h5>
