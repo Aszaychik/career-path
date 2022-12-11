@@ -53,13 +53,13 @@
         <article v-for="(item, index) in topics" :key="index" class="row row-cols-3 align-items-center text-center">
           <div class="d-grid gap-5">
             <div class="" v-for="(subitem, subindex) in item.sub" :key="subindex" v-if="isEven(subindex)">
-              <button class="btn btn-sub p-3 px-5 rounded-1 text-capitalize" data-bs-toggle="modal" data-bs-target="#modalSubTopicBody">{{ subitem.title }}</button>
+              <button class="btn btn-sub p-3 px-5 rounded-1 text-capitalize" data-bs-toggle="modal" data-bs-target="#modalSubTopic">{{ subitem.title }}</button>
               <!-- Modal -->
-              <div class="modal fade" id="modalSubTopicBody" tabindex="-1" aria-labelledby="modalSubTopicBodyLabel" aria-hidden="true">
+              <div class="modal fade" id="modalSubTopic" tabindex="-1" aria-labelledby="" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title text-capitalize" id="modalSubTopicBodyLabel">{{ subitem.title }}</h5>
+                      <h5 class="modal-title text-capitalize" id="">{{ subitem.title }}</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">{{ subitem.body }}</div>
@@ -73,13 +73,13 @@
           </div>
           <div class="d-grid gap-5">
             <div class="" v-for="(subitem, subindex) in item.sub" :key="subindex" v-if="isOdd(subindex)">
-              <button class="btn btn-sub p-3 px-5 rounded-1 text-capitalize" data-bs-toggle="modal" data-bs-target="#modalSubTopicBody">{{ subitem.title }}</button>
+              <button class="btn btn-sub p-3 px-5 rounded-1 text-capitalize" data-bs-toggle="modal" data-bs-target="#modalSubTopic">{{ subitem.title }}</button>
               <!-- Modal -->
-              <div class="modal fade" id="modalSubTopicBody" tabindex="-1" aria-labelledby="modalSubTopicBodyLabel" aria-hidden="true">
+              <div class="modal fade" id="modalSubTopic" tabindex="-1" aria-labelledby="" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title text-capitalize" id="modalSubTopicBodyLabel">{{ subitem.title }}</h5>
+                      <h5 class="modal-title text-capitalize" id="">{{ subitem.title }}</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">{{ subitem.body }}</div>
